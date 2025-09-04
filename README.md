@@ -10,7 +10,7 @@ HBase >= 1.0
 
 ## Installation
 
-    go get github.com/tsuna/gohbase
+    go get github.com/innovationb1ue/gohbase
 
 ## Example Usage
 

@@ -331,9 +331,14 @@ func (s *Scan) DeserializeCellBlocks(m proto.Message, b []byte) (uint32, error) 
 		if err != nil {
 			return 0, err
 		}
+
+		isPartial := false
+		if len(partials) > 0 {
+			isPartial = partials[i]
+		}
 		scanResp.Results[i] = &pb.Result{
 			Cell:    cells,
-			Partial: proto.Bool(partials[i]),
+			Partial: proto.Bool(isPartial),
 		}
 		readLen += l
 	}
