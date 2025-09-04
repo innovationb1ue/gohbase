@@ -1,4 +1,4 @@
-module github.com/tsuna/gohbase
+module github.com/innovationb1ue/gohbase
 
 go 1.23.0
 
