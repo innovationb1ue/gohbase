@@ -12,7 +12,7 @@ package mock
 import (
 	reflect "reflect"
 
-	zk "github.com/tsuna/gohbase/zk"
+	zk "github.com/innovationb1ue/gohbase/zk"
 	gomock "go.uber.org/mock/gomock"
 )
 

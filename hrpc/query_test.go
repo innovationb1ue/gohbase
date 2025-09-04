@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tsuna/gohbase/filter"
-	"github.com/tsuna/gohbase/test"
+	"github.com/innovationb1ue/gohbase/filter"
+	"github.com/innovationb1ue/gohbase/test"
 )
 
 func TestFamiliesOption(t *testing.T) {

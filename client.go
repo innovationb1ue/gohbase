@@ -15,11 +15,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tsuna/gohbase/compression"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
-	"github.com/tsuna/gohbase/region"
-	"github.com/tsuna/gohbase/zk"
+	"github.com/innovationb1ue/gohbase/compression"
+	"github.com/innovationb1ue/gohbase/hrpc"
+	"github.com/innovationb1ue/gohbase/pb"
+	"github.com/innovationb1ue/gohbase/region"
+	"github.com/innovationb1ue/gohbase/zk"
 	"google.golang.org/protobuf/proto"
 	"modernc.org/b/v2"
 )

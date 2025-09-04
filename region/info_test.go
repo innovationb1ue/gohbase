@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/innovationb1ue/gohbase/hrpc"
+	"github.com/innovationb1ue/gohbase/pb"
+	"github.com/innovationb1ue/gohbase/test"
+	"github.com/innovationb1ue/gohbase/test/mock"
 	"github.com/stretchr/testify/assert"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
-	"github.com/tsuna/gohbase/test"
-	"github.com/tsuna/gohbase/test/mock"
 	"google.golang.org/protobuf/proto"
 )
 

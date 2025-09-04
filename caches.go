@@ -12,7 +12,7 @@ import (
 	"log/slog"
 	"sync"
 
-	"github.com/tsuna/gohbase/hrpc"
+	"github.com/innovationb1ue/gohbase/hrpc"
 	"modernc.org/b/v2"
 )
 
