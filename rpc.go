@@ -834,7 +834,7 @@ func (c *client) metaLookup(ctx context.Context,
 	if !bytes.Equal(table, fullyQualifiedTable(reg)) {
 		// This would indicate a bug in HBase.
 		return nil, "", fmt.Errorf("meta returned an entry for the wrong table!"+
-			"  Looked up table=%q key=%q got region=%s", table, key, reg)
+			"  Looked up table=%q key=%q got region=%s,  table str = %s, got %s", table, key, reg, string(table), string(fullyQualifiedTable(reg)))
 	} else if len(reg.StopKey()) != 0 &&
 		bytes.Compare(key, reg.StopKey()) >= 0 {
 		// This would indicate a hole in the meta table.
