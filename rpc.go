@@ -898,7 +898,7 @@ func (c *client) metaLookupForTable(ctx context.Context,
 func fullyQualifiedTable(reg hrpc.RegionInfo) []byte {
 	namespace := reg.Namespace()
 	table := reg.Table()
-	if namespace == nil {
+	if namespace == nil || len(namespace) == 0 {
 		return table
 	}
 	// non-default namespace table
