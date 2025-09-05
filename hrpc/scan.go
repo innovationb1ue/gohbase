@@ -324,7 +324,7 @@ func (s *Scan) NewResponse() proto.Message {
 func (s *Scan) DeserializeCellBlocks(m proto.Message, b []byte) (uint32, error) {
 	scanResp := m.(*pb.ScanResponse)
 	partials := scanResp.GetPartialFlagPerResult()
-	scanResp.Results = make([]*pb.Result, len(partials))
+	scanResp.Results = make([]*pb.Result, len(scanResp.GetCellsPerResult()))
 	var readLen uint32
 	for i, numCells := range scanResp.GetCellsPerResult() {
 		cells, l, err := deserializeCellBlocks(b[readLen:], numCells)
